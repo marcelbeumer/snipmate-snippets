@@ -56,12 +56,6 @@ snippet subclass
 
 	// Inherit from $3
 	_.inherits($1, ${3:super_class});
-# Prototype
-snippet proto
-	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
-		${4:// body...}
-	};
-# Prototype with super
 snippet protosuper
 	${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
 		$1.__super__.$2.
