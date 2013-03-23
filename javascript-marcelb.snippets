@@ -30,6 +30,14 @@ snippet mod
 	var ${1:ns} = ${2:parent_obj}.${3:module_name}
 
 	})();
+
+#js boiler
+snippet boilerjs
+	/*jshint undef:true, forin:false, eqeqeq:true, browser:true, newcap:true */
+	/*global console:true, $:true */
+	(function (global) {
+
+	})(this);
 #js boiler for buzz
 snippet buzzjs
 	/*jshint undef:true, forin:false, eqeqeq:true, browser:true, newcap:true */
